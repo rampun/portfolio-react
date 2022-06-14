@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-4xl text-black font-outfit font-semibold;
+    }
+    h2 {
+        @apply text-3xl text-black font-outfit font-semibold;
+    }
+    h3 {
+        @apply text-2xl text-black font-outfit font-semibold;
+    }
+    h4 {
+        @apply text-xl text-black font-outfit font-semibold;
+    }
+    h5 {
+        @apply text-lg text-black font-outfit font-semibold;
+    }
+    h6 {
+        @apply text-sm text-black font-outfit font-semibold;
+    }
+    p, li, a {
+        @apply text-lg text-black font-outfit font-light text-base;
+    }
+
+    /* dark style for fonts */
+    html.dark h1, html.dark h2, html.dark h3, html.dark h4, html.dark p, html.dark li, html.dark a {
+        @apply text-white;
+    }
+    
+
+    .highlight
+    {
+        position: relative;
+    }
+    .highlight::after{
+        background-color: #36ff4e!important;
+        bottom: 3px;
+        content: "";
+        height: 13px;
+        position: absolute;
+        right: -5px;
+        visibility: visible;
+        width: calc(100% + 10px);
+        z-index: -1;
+    }
+    a.transparent_button{
+        border: 1px solid black;
+        background: transparent;
+        color: black;
+        padding: 6px 18px;
+    }
+
+
+    ul.custom-list li::before{
+        color: #36ff4e;
+        content: "▹";
+        left: 0;
+        line-height: 12px;
+        position: absolute;
+        top: 6px;
+    }
 }
