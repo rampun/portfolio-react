@@ -1,7 +1,4 @@
 import React from 'react'
-import Layout from './components/Layout/Layout'
-import WorkTile from './components/WorkTile/WorkTile'
-
 import HomeController from './screens/home/home-controller'
 import WorksController from './screens/works/works-controller'
 import WorkController from './screens/work/work-controller'

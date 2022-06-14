@@ -27,7 +27,7 @@ function useDarkMode() {
         moonIcon.classList.remove('hidden');
         sunIcon.classList.add('hidden');
     }
-  }, [setTheme, colorTheme])
+  }, [setTheme, colorTheme, theme])
 
   return[setTheme, colorTheme]
 }

@@ -40,7 +40,7 @@ const AboutView = () => {
 
         </div>
         <div className='w-full md:w-2/5'>
-          <img src={ProfileImage} className="shadow-2xl" alt='Profile Image' />
+        <img src={ProfileImage} className="shadow-2xl" alt="Profile" />
         </div>
       </div>
 
