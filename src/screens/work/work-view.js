@@ -23,26 +23,26 @@ const WorkView = ({workSingle}) => {
           </div>
 
           <div className='flex gap-10 my-8 md:my-16'>
-              <div className='w-full max-w-5xl m-auto flex gap-16'>
-                  <div className='w-8/12'>
+              <div className='w-full max-w-5xl m-auto flex flex-col md:flex-row gap-16'>
+                  <div className='w-full md:w-8/12'>
                     <p>{workSingle.overview}</p>
                   </div>
-                  <div className='w-4/12'>
+                  <div className='w-full md:w-4/12'>
                       <div className='border border-grey p-8'>
                           <div className='py-6 pt-0 border-b border-grey'>
-                          <h6>Type</h6>
+                          <h6 className='dark:text-white'>Type</h6>
                           <p>{workSingle.type}</p>
                           </div>
                           <div className='py-6  border-b border-grey'>
-                          <h6>Development</h6>
+                          <h6 className='dark:text-white'>Development</h6>
                           <p>{workSingle.development}</p>
                           </div>
                           <div className='py-6  border-b border-grey'>
-                          <h6>Technology</h6>
+                          <h6 className='dark:text-white'>Technology</h6>
                           <p>{workSingle.technology}</p>
                           </div>
                           <div className='py-6 pb-0'>
-                          <h6>Credit</h6>
+                          <h6 className='dark:text-white'>Credit</h6>
                           <p>{workSingle.credit}</p>
                           </div>
                       </div>
